@@ -1,0 +1,90 @@
+.containerStyles {
+  height: 3rem;
+  width: 100%;
+  background-color: #e0e0de;
+  border-radius: 10px;
+  margin: 0.3rem 50;
+}
+.fillerStyles {
+  height: 100%;
+  border-radius: "inherit";
+  text-align: "center";
+  animation-name: animation;
+  animation-delay: 5s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  width: 100%;
+}
+.fillerStyle2 {
+  height: 100%;
+  border-radius: "inherit";
+  text-align: "center";
+  animation-name: animation2;
+  animation-delay: 5s;
+  animation-duration: 5s;
+  width: 100%;
+  animation-fill-mode: forwards;
+}
+.labelStyles {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+@keyframes animation {
+  0% {
+    background-color: red;
+    width: 10%;
+  }
+  25% {
+    background-color: orange;
+    width: 25%;
+  }
+  50% {
+    background-color: yellowgreen;
+    width: 50%;
+  }
+  75% {
+    background-color: green;
+    width: 75%;
+  }
+  100% {
+    background-color: blue;
+    width: 100%;
+  }
+}
+@keyframes animation2 {
+  0% {
+    background-color: red;
+    width: 10%;
+  }
+  25% {
+    background-color: orange;
+    width: 25%;
+  }
+  50% {
+    background-color: yellowgreen;
+    width: 50%;
+  }
+  75% {
+    background-color: green;
+    width: 75%;
+  }
+  100% {
+    background-color: green;
+    width: 80%;
+  }
+}
+@media (min-width: 1500px) {
+  .containerStyles {
+    height: 15rem;
+    width: 100%;
+    border-radius: 50px;
+    margin: 2rem auto;
+  }
+  .labelStyles {
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 15rem;
+  }
+}

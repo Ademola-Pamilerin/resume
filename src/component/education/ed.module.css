@@ -1,0 +1,68 @@
+.cover {
+  margin: 1rem auto;
+  width: 100%;
+  border-bottom: 2px dashed grey;
+}
+.title {
+  font-style: oblique;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+.aside {
+  margin: 1rem 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.year {
+  padding: 2rem;
+  background: grey;
+  font-weight: 500;
+  font-size: 1rem;
+  margin:0 0 0 10px;
+}
+.location {
+  padding: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+@media (min-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+  .year {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .location {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1500px) {
+  .title {
+    font-size: 3rem;
+  }
+  .year {
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+  .location {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 2000px) {
+  .title {
+    font-size: 5em;
+  }
+  .year {
+    font-size: 6em;
+    font-weight: 700;
+  }
+  .location {
+    font-size: 6em;
+    font-weight: 700;
+  }
+}

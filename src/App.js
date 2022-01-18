@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./component/about/about";
+import Skill from "./component/skills/skill";
+import Education from "./component/education/edu";
+import Portfolio from "./component/Portfolio/portfolio";
+import Experience from "./component/experience/experience";
+import Homepage from "./component/homepage/home";
+import { useState } from "react";
+import ReactDom from "react-dom";
 
-function App() {
+const App = () => {
+  const [show, setShow] = useState("none");
+  const domNode = document.getElementById("DOM_Node");
+
+  const clicked = () => {
+    setShow("none");
+  };
+  const Switched = (val) => {
+    setShow(val);
+  };
+  console.log(show)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {show === "About" &&
+        ReactDom.createPortal(<About clicked={clicked} />, domNode)}
+      {show === "Skill" &&
+        ReactDom.createPortal(<Skill clicked={clicked} />, domNode)}
+      {show === "Education" &&
+        ReactDom.createPortal(<Education clicked={clicked} />, domNode)}
+      {show === "Portfolio" &&
+        ReactDom.createPortal(<Portfolio clicked={clicked} />, domNode)}
+      {show === "Experience" &&
+        ReactDom.createPortal(<Experience clicked={clicked} />, domNode)}
+      {show === "none" && <Homepage switch={(val)=>Switched(val)} />}
+    </>
   );
-}
-
+};
 export default App;

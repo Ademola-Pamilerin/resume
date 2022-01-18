@@ -1,0 +1,46 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0.9;
+}
+.cancel {
+  z-index: 10;
+  display: none;
+}
+.cancel span {
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 5rem;
+  position: fixed;
+  z-index: 20;
+  left: 10px;
+  background: #060614;
+}
+.Modal {
+  position: absolute;
+  z-index: 15;
+  background: rgb(136, 136, 136);
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 16px none;
+  left: 0;
+  box-sizing: border-box;
+  animation-name: animate1;
+  animation-duration: 4s;
+  margin-bottom: 1rem;
+}
+
+@keyframes animate1 {
+  from {
+    transform: translateY(-1000px);
+    background: blue;
+  }
+  to {
+    transform: translateY(0px);
+  }
+}

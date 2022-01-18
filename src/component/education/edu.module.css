@@ -1,0 +1,50 @@
+.image_container {
+  background-color: black;
+  width: 100%;
+}
+.image_container img {
+  width: 80%;
+  height: 100%;
+  margin-bottom: -0.5rem;
+}
+.caption {
+  width: 100%;
+  background: white;
+  margin: 1rem auto 1.2rem auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.caption span {
+  font-size: 2rem;
+  background: grey;
+  border-radius: 30px;
+  padding: 1rem 3rem;
+  margin: 0.8rem auto;
+  font-weight: 700;
+}
+.body {
+  background: black;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+.inner {
+  margin: 1rem auto;
+  width: 90%;
+  background: rgb(250, 248, 248);
+}
+@media (min-width: 600px) {
+  .caption span {
+    font-size: 4rem;
+    padding: 2rem 6rem;
+  }
+}
+@media (min-width: 2500px) {
+  .inner {
+    max-width: 2500px;
+  }
+  .caption span {
+    font-size: 10em;
+  }
+}

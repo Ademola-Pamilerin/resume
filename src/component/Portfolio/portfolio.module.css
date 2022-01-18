@@ -1,0 +1,106 @@
+.total {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  background: rgb(34, 33, 33);
+  padding: 0 0px;
+}
+.image img {
+  height: 85%;
+  width: 70%;
+  margin-bottom: -2rem;
+}
+
+.top {
+  background: rgb(19, 18, 18);
+  width: 95%;
+  margin: 3rem auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.caption {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  background: white;
+  margin: 2rem 0px 0px 0px;
+}
+.header_caption {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem auto;
+  background: grey;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.container {
+  width: 95%;
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem auto;
+}
+.sections {
+  display: block;
+  margin: 1rem 0.5rem;
+}
+.title {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  width: 100%;
+}
+.title span {
+  font-size: 1.5rem;
+  font-style: oblique;
+  font-weight: 700;
+  margin: 20px;
+  text-align: left;
+}
+.date {
+  width: 100%;
+  display: flex;
+  text-align: lef;
+  justify-content: left;
+}
+.date span {
+  padding: 1rem 2rem;
+  background: grey;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 20px;
+}
+@media (min-width: 800px) {
+  .title span {
+    font-size: 3rem;
+  }
+  .date span {
+    font-size: 3rem;
+  }
+  .header_caption {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1800px) {
+  .header_caption {
+    font-size: 10em;
+  }
+  .title span {
+    font-size: 6rem;
+  }
+  .date span {
+    font-size: 5rem;
+  }
+}
